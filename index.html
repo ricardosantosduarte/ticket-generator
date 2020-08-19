@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="./pensil.png">
+    <script src="./scripts.js"></script>
+  </head>
+  <body
+    style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-wrap: wrap; font-family: sans-serif;"
+  >
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; text-align: center;">
+    <div>
+      <select id="ticket-type">
+      <option selected value="feat">
+        feat
+      </option>
+      <option value="fix">
+        fix
+      </option>
+      <option value="refactor">
+        refactor
+      </option>
+    </select>
+    <input id="ticket" placeholder="Ticket ID" />
+    <input id="title" placeholder="Ticket Title"/>
+    <button type="button" onclick="transform();"">Transform</button>
+    </div>
+    <div style="width: 100%;">
+      <h4 id="branch" style="width: 100%;"></h4>
+    </div>
+    <div style="width: 100%">
+      <h4 style="width: 100%" id="gitCommands"></h4>
+    </div>
+  </div>
+  </body>
+</html>
