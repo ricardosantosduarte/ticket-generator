@@ -4,16 +4,12 @@ Generate your atlassian tickets as branches using this simple generator
 
 ## How to use
 
-### Insert the **Ticket ID** and **Title**
+### All you need to do is copy the `ticket title` + `ticket id` from jira directly and paste it here
 
-#### Click generate
+(it's doing the split on `ID` & `Title` by two spaces that's what you get after you copy from jira)
 
-##### Copy the branch name and create the branch in your own repo
-
-##### Copy the git command and paste it in your terminal
-
-### Now with copy on Git Command Click!
+### To copy the git command all you need to do is click on it! The copy now is done automagically
 
 ### Result
 
-![Result](result.png?raw=true "Result")
+![Result](result.png "Result")
