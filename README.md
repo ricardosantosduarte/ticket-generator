@@ -1,4 +1,5 @@
 # ticket-generator
+
 Generate your atlassian tickets as branches using this simple generator
 
 ## How to use
@@ -11,6 +12,7 @@ Generate your atlassian tickets as branches using this simple generator
 
 ##### Copy the git command and paste it in your terminal
 
+### Now with copy on Git Command Click!
 
 ### Result
 
