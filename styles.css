@@ -1,0 +1,63 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-wrap: wrap;
+	font-family: sans-serif;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+
+input[name="ticket_title"] {
+	margin-top: 0.5rem;
+	width: 100%;
+	height: fit-content;
+}
+
+button {
+	margin: 1rem auto 0;
+}
+
+.form-part {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-basis: 33.3%;
+}
+
+.form-part > label {
+	width: 100%;
+}
+
+.option {
+	margin-top: 0.5rem;
+	display: flex;
+	padding-left: 3rem;
+}
+
+.option > label {
+	margin-left: 1rem;
+	cursor: pointer;
+}
+
+.form-options {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#copied {
+	visibility: hidden;
+}

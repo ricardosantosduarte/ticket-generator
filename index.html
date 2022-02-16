@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" type="image/png" href="./pensil.png">
-    <script src="./scripts.js"></script>
-  </head>
-  <body
-    style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-wrap: wrap; font-family: sans-serif;"
-  >
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; text-align: center;">
-    <div>
-      <select id="ticket-type">
-        <option selected value="feature">
-          feature
-        </option>
-        <option value="feat">
-          feat
-        </option>
-        <option value="fix">
-          fix
-        </option>
-        <option value="refactor">
-          refactor
-        </option>
-    </select>
-    <input id="ticket" placeholder="Ticket ID" />
-    <input id="title" placeholder="Ticket Title"/>
-    <button type="button" onclick="transform();"">Generate</button>
-    </div>
-    <div style="width: 100%;">
-      <h4 id="branch" style="width: 100%;"></h4>
-    </div>
-    <div style="width: 100%">
-      <h4 style="width: 100%" id="gitCommands"></h4>
-    </div>
-  </div>
-  </body>
+	<head>
+		<title>Ticket Branch Generator</title>
+		<link rel="icon" type="image/png" href="./pensil.png" />
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+
+	<body>
+		<section>
+			<div>
+				<form>
+					<div class="form-part">
+						<label>Branch</label>
+						<div class="form-options">
+							<div class="option">
+								<input
+									type="radio"
+									id="master"
+									checked="checked"
+									value="master"
+									name="branch_name"
+								/>
+								<label for="master"> master </label>
+							</div>
+
+							<div class="option">
+								<input type="radio" id="main" value="main" name="branch_name" />
+								<label for="main"> main </label>
+							</div>
+						</div>
+					</div>
+					<div class="form-part">
+						<label>Type of Ticket</label>
+						<div class="form-options">
+							<div class="option">
+								<input
+									type="radio"
+									id="feature"
+									checked="checked"
+									value="feature"
+									name="ticket_type"
+								/>
+								<label for="feature"> feature </label>
+							</div>
+
+							<div class="option">
+								<input type="radio" id="feat" value="feat" name="ticket_type" />
+								<label for="feat"> feat </label>
+							</div>
+
+							<div class="option">
+								<input type="radio" id="fix" value="fix" name="ticket_type" />
+								<label for="fix"> fix </label>
+							</div>
+
+							<div class="option">
+								<input
+									type="radio"
+									id="refactor"
+									value="refactor"
+									name="ticket_type"
+								/>
+								<label for="refactor"> refactor </label>
+							</div>
+						</div>
+					</div>
+					<div class="form-part">
+						<label for="ticket_title">Ticket Title</label>
+						<input autofocus id="ticket_title" name="ticket_title" />
+					</div>
+				</form>
+			</div>
+			<div style="width: 100%">
+				<h4 id="branch" style="width: 100%"></h4>
+			</div>
+			<div style="width: 100%">
+				<h4 style="width: 100%" id="gitCommands"></h4>
+				<span id="copied"> copied </span>
+			</div>
+		</section>
+		<script src="./scripts.js"></script>
+	</body>
 </html>
